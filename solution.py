@@ -11,7 +11,7 @@ def solution(x: np.array, y: np.array) -> bool: # Одна или две выб�
     t_crit = stats.t.ppf(1-alpha/2, len(x)+len(y)-2)
     
     if abs(t_stat) > t_crit:
-        return True
-    else:
         return False
+    else:
+        return True
 
